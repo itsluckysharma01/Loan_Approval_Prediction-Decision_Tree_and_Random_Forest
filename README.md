@@ -36,13 +36,39 @@ The dataset is sourced from a public repository and contains the following infor
 
 ### 💻 Usage
 
+#### Option 1: Web Application (Recommended)
+
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/itsluckysharma01/Loan_Approval_Prediction-Decision_Tree_and_Random_Forest.git
+cd Loan_Approval_Prediction-Decision_Tree_and_Random_Forest
 ```
 
-2. Open and run the Jupyter notebook:
+2. Run the Jupyter notebook first to train and save the models:
+
+```bash
+jupyter notebook Loan_Approval_Prediction-Decesion_Tree_and-Random_Forest.ipynb
+```
+
+3. Start the web application:
+
+**Windows:**
+
+```bash
+run_app.bat
+```
+
+**Linux/Mac:**
+
+```bash
+chmod +x run_app.sh
+./run_app.sh
+```
+
+4. Open your browser and go to: `http://localhost:5000`
+
+#### Option 2: Jupyter Notebook
 
 ```bash
 jupyter notebook Loan_Approval_Prediction-Decesion_Tree_and-Random_Forest.ipynb
@@ -79,11 +105,32 @@ prediction = model.predict(sample_input)
 ## 🛠️ Project Structure
 
 ```
+├── 📁 templates/
+│   ├── index.html                    # Main web interface
+│   └── about.html                    # About page
+├── 📁 static/
+│   ├── 📁 css/
+│   │   └── style.css                 # Styling
+│   └── 📁 js/
+│       └── script.js                 # Frontend logic
+├── app.py                            # Flask web application
+├── requirements.txt                  # Python dependencies
+├── run_app.bat                       # Windows startup script
+├── run_app.sh                        # Linux/Mac startup script
 ├── Loan_Approval_Prediction-Decesion_Tree_and-Random_Forest.ipynb
 ├── loan_approval_Decession_Tree_model.pkl
 ├── loan_approval_Random_Forest_model.pkl
 └── README.md
 ```
+
+## 🌐 Web Interface Features
+
+- **Interactive Form**: User-friendly interface for entering loan application details
+- **Real-time Predictions**: Instant results from both ML models
+- **Confidence Scores**: Shows prediction confidence percentages
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **Visual Feedback**: Color-coded results and animations
+- **Model Comparison**: Side-by-side comparison of Decision Tree vs Random Forest
 
 ## 📝 Model Features Explanation
 
