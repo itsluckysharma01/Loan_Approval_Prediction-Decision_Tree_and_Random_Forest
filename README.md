@@ -1,0 +1,2 @@
+# Loan_Approval_Prediction-Decision_Tree_and_Random_Forest
+git remote add origin https://github.com/itsluckysharma01/Loan_Approval_Prediction-Decision_Tree_and_Random_Forest.git
