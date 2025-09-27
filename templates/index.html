@@ -30,7 +30,7 @@
             <section class="prediction-section">
                 <div class="form-container">
                     <h3><i class="fas fa-calculator"></i> Loan Application Details</h3>
-                    <form id="loanForm">
+                    <form id="loanForm" action="javascript:void(0);" method="post">
                         <div class="form-grid">
                             <div class="form-group">
                                 <label for="education">
@@ -97,7 +97,7 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="predict-btn">
+                        <button type="button" class="predict-btn" onclick="handlePrediction()">
                             <i class="fas fa-magic"></i> Predict Loan Approval
                         </button>
                     </form>

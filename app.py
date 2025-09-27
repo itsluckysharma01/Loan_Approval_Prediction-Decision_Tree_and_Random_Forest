@@ -95,9 +95,6 @@ def predict():
             'error': str(e)
         })
 
-@app.route('/test')
-def test():
-    return jsonify({'status': 'Flask app is working!', 'models_loaded': dt_model is not None and rf_model is not None})
 
 @app.route('/about')
 def about():
